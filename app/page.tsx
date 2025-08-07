@@ -1,7 +1,7 @@
 "use client";
 
 import { R2ImageViewer } from "@/components/r2-image-viewer";
-import { AspectDistributionCharts } from "@/components/aspect-distribution-charts";
+import { AspectPieCharts } from "@/components/aspect-pie-charts";
 import { SentimentChart } from "@/components/sentiment-chart";
 import { SentimentPieCharts } from "@/components/sentiment-pie-charts";
 import * as React from "react";
@@ -22,7 +22,7 @@ export default function SentimentDashboard() {
       <div className="flex flex-col gap-8">
         <SentimentChart />
         <SentimentPieCharts />
-        <AspectDistributionCharts />
+        <AspectPieCharts />
         <hr/>
         <R2ImageViewer />
         <hr />

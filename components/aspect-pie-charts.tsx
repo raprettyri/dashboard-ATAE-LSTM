@@ -52,7 +52,7 @@ const ASPECT_COLORS = [
 
 const capitalizeWords = (str: string) => str.replace(/\b\w/g, char => char.toUpperCase());
 
-export function AspectDistributionCharts() {
+export function AspectPieCharts() {
   const [chartData, setChartData] = React.useState<GroupedChartData>({});
   const [selectedSentiment, setSelectedSentiment] = React.useState<SentimentType>("positive");
   const [timeRange, setTimeRange] = React.useState<string>("30d");
