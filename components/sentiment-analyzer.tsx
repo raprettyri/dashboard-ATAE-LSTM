@@ -41,8 +41,10 @@ export function SentimentAnalyzer() {
         setError(null);
         setResults(null);
 
+        const apiUrl = `${process.env.NEXT_PUBLIC_ANALYZE_API_URL}/api/analyze`;
+
         try {
-            const response = await fetch('/api/analyze', {
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
