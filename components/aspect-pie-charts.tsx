@@ -158,7 +158,7 @@ export function AspectPieCharts() {
         {isLoading ? (
           <div className="flex items-center justify-center h-[350px] text-muted-foreground">Memuat data...</div>
         ) : Object.keys(chartData).length > 0 ? (
-          <div className="flex flex-wrap justify-center gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {Object.entries(chartData).map(([platformId, platformData]) => {
               const totalReviews = platformData.aspects.reduce((sum, aspect) => sum + aspect.value, 0);
               const chartConfig = platformData.aspects.reduce<ChartConfig>((acc, aspect, index) => {

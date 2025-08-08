@@ -159,7 +159,7 @@ export function SentimentPieCharts() {
         {isLoading ? (
           <div className="flex items-center justify-center h-[350px] text-muted-foreground">Memuat data...</div>
         ) : chartData.length > 0 ? (
-          <div className="flex flex-wrap justify-center gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {chartData.map((platformData) => {
               const pieData = [
                 { sentiment: 'positive', count: platformData.positive, fill: 'var(--color-positive)' },
