@@ -86,7 +86,8 @@ except Exception as e:
 # Inisialisasi Aplikasi Flask
 app = Flask(__name__)
 
-@app.route('/api/analyze', methods=['POST'])
+@app.route('/', methods=['POST'])
+@app.route('/analyze', methods=['POST'])
 def analyze():
     if model is None:
         return jsonify({"error": "Model tidak berhasil dimuat di server."}), 500
