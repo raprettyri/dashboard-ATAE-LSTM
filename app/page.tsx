@@ -6,6 +6,7 @@ import {SentimentChart} from "@/components/sentiment-chart";
 import {SentimentPieCharts} from "@/components/sentiment-pie-charts";
 import * as React from "react";
 import { AggregatedSentimentPieCharts } from "@/components/aggregated-sentiment-pie-charts";
+import { SentimentAnalyzer } from "@/components/sentiment-analyzer";
 // import { JsonUploader } from "@/components/JsonUploader";
 
 export default function SentimentDashboard() {
@@ -29,6 +30,7 @@ export default function SentimentDashboard() {
                 <hr/>
                 <R2ImageViewer/>
                 <hr/>
+                <SentimentAnalyzer />
                 {/*<JsonUploader />*/}
             </div>
         </main>
